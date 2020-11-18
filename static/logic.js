@@ -23,6 +23,9 @@ frst_split.forEach(function(string) {
         key1 = thd_split[0].trim();
         key1 = key1.substring(1);
         key1 = key1.substring(0, key1.length - 1);
+        if (key1.includes("years")) {
+          key1 = "years"
+        }
         dict2[key1] = thd_split[1];
     })
     dict1.push(dict2) 
